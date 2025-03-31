@@ -1,0 +1,212 @@
+.page__history {
+  padding: 0 15px;
+  margin-top: 120px;
+}
+
+.history__container {
+  background-color: #F6FCFA;
+  display: flex;
+  border-radius: 6px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.column-info-history {
+  flex: 0 0 50%;
+  padding: 5.3125rem 3.875rem;
+  position: relative;
+}
+
+.column-info-history::before{
+  font-size: 77px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.column-video {
+  flex: 0 0 50%;
+}
+
+.column-info-history__title {
+  color: var(--dark);
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-family: var(--OpenSans);
+}
+
+.column-info-history__title:not(:last-child) {
+  margin-bottom: 0.3em;
+}
+
+.column-info-history__descr {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  font-family: var(--OpenSans);
+}
+
+.column-info-history__descr:not(:last-child) {
+  margin-bottom: 2.9em;
+}
+
+.column-info-history__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 15px;
+  max-width: 355px;
+  font-family: var(--OpenSans);
+}
+
+.column-info-history__explore {
+  font-size: 1rem;
+  padding: 0.625em 1.5625em;
+}
+
+@media (max-width:61.9988em){
+  .page__history {
+    margin-top: 90px;
+  }
+
+  .history__container {
+    flex-direction: column;
+  }
+  
+  .column-info-history {
+    padding: 2.5rem;
+  }
+  
+  .ivideo {
+    padding-bottom: 50%;
+  }
+}
+
+@media (max-width: 47.9988em){
+  .page__history {
+    margin-top: 50px;
+  }
+
+  .column-info-history {
+    padding: 1.5625rem;
+  }
+
+  .column-info-history__title {
+    font-size: 1.5625rem;
+  }
+
+  .column-info-history__title:not(:last-child) {
+    margin-bottom: 0.2em;
+  }
+  
+  .column-info-history__descr:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .column-info-history__explore {
+    padding: 0.625rem;
+  }
+
+  .column-info-history::before{
+    display: none;
+  }
+  
+}
+
+/* ------------------------------ styles for lazy youtube video ---------------------------------- */
+.ivideo {
+  position: relative;
+  background-color: #000;
+}
+
+.ivideo__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.ivideo__button {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 88px;
+  height: 88px;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;visibility: hidden;
+}
+
+.column-video__button::before{
+  color: #F6FCFA;
+  font-size: 88px;
+  transform: translate(0%,7%);
+}
+
+.column-video__button::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #F6FCFA6B;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+}
+
+.column-video__button span{
+  content:'';
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  opacity: 0;
+  background-color: #f6fcfa94;
+  border-radius: 50%;
+  transition: all 0.2s ease 0s;
+}
+
+.column-video__button:focus.column-video__button::after{
+  scale: 1.1;
+}
+
+.column-video__button:focus.column-video__button span {
+  opacity: 1;
+  scale: 2.2;
+}
+
+.video-enabled {
+  cursor: pointer;
+}
+
+.video-enabled .column-video__button {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (any-hover: hover){
+  .column-video:hover .column-video__button::after {
+    scale: 1.1;   
+  }
+  .column-video:hover .column-video__button span {
+    opacity: 1;
+    scale: 2.2;
+  }
+}

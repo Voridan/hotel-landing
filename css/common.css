@@ -1,0 +1,224 @@
+.button{
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.6;
+  color: #fff;
+  background-color: var(--deepblue);
+  box-shadow: 0px 4px 12px 0px rgba(21, 21, 21, 0.15);
+  transition: all 0.3s ease 0s;
+}
+
+.watch-video-btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-left: -8px;
+}
+
+.watch-video-btn span {
+  color: var(--dark);
+}
+
+.watch-video-btn::before{
+  color: var(--deepblue);
+  font-size: 65px;
+  transform: translate(0px,3px);
+  transition: color 0.3s ease 0s;
+}
+
+.block-title {
+  font-size: 2.8125rem;
+  line-height: 1.2;
+  color: var(--titleColor);
+}
+
+.block-title:not(:last-child) {
+  margin-bottom: 0.35em;
+}
+
+.block-subtitle {
+  font-size: 1.125rem;
+  color: #959595;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-family: var(--AvgSans);
+}
+
+/*========================================================================================================================================================*/
+.swiper-pagination-bullet {
+  background: #B1BED0A8;
+  border-radius: 58px;
+  width: 16px;
+  height: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #597193;
+  width: 36px;
+}
+
+.swiper-pagination-bullet-active-prev-prev,
+.swiper-pagination-bullet-active-next-next {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,0%);
+}
+/*========================================================================================================================================================*/
+.button:focus{
+  background-color: #a0bce8;
+  box-shadow: 0px 4px 12px 0px rgba(21, 21, 21, 0);
+  cursor: pointer;
+}
+
+.watch-video-btn:focus.watch-video-btn span {
+  text-decoration: underline;
+}
+
+.watch-video-btn:focus.watch-video-btn::before {
+  color: #a0bce8;
+}
+
+
+.popup {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000006a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup__body {
+  border-radius: 14px;
+  width: 80%;
+  height: 150px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(0%,100px);
+  transition: all 0.3s ease 0s;
+}
+
+.popup-close {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.popup__message {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--deepblue);
+}
+
+.popup-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-active .popup__body {
+  transform: translate(0%,-100px);
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  display: none;
+}
+
+.loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #cef;
+  border-color: #cef transparent #cef transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.isLoading.loader {
+  display: block;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (any-hover: hover){
+  .button:hover{
+    background-color: #a0bce8;
+    box-shadow: 0px 4px 12px 0px rgba(21, 21, 21, 0);
+    cursor: pointer;
+  }
+  
+  .watch-video-btn:hover.watch-video-btn span {
+    text-decoration: underline;
+  }
+
+  .watch-video-btn:hover.watch-video-btn::before {
+    color: #a0bce8;
+  }
+}
+
+@media (max-width: 61.9988em){
+  .block-title {
+    font-size: 2.1875rem;
+  }
+}
+
+@media (max-width: 47.9988em){
+  .block-title {
+    font-size: 1.875rem;
+  }
+  
+  .block-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 26.5613rem){
+  .block-title {
+    font-size: 1.5625rem;
+  }
+
+  .popup__body {
+    width: 95%;
+  }
+
+  .popup__message {
+    font-size: 16px;
+  }
+}

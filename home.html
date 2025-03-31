@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="" class="logo">
+            <img src="assets/icons/logo.svg" alt="logotype" class="logo-img" />
+            <span class="brand">HOTEL</span>
+          </a>
+          <div class="header__menu menu">
+            <div class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link _active">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Branch</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Search</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Pages</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="" class="reserve-button button">Reservation</a>
+          <div class="menu-icon"><span></span></div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__hero hero-page">
+          <div class="hero-page__container">
+            <div class="hero-page__column-info column-info-hero">
+              <h1 class="column-info-hero__title">
+                Discover a hotel that defies a new dimension of luxury.
+              </h1>
+              <p class="column-info-hero__descr">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy.
+              </p>
+              <div class="column-info-hero__actions">
+                <a href="" class="column-info-hero__get-started button"
+                  >Get Started</a
+                >
+                <button
+                  type="button"
+                  class="column-info-hero__watch-video watch-video-btn _icon-play"
+                >
+                  <span>Watch video</span>
+                </button>
+              </div>
+            </div>
+            <div class="hero-page__column-media">
+              <div class="column-media__img-cnt">
+                <img
+                  class="column-media__image"
+                  src="assets/img/main-img.png"
+                  alt="hotel"
+                />
+              </div>
+              <div class="column-media__payment">
+                <div class="payment-media__decor"></div>
+                <span class="payment-media__title">Payment</span>
+                <span class="payment-media__subtitle">on internet</span>
+              </div>
+              <div class="column-media__market market-media">
+                <div class="market-media__topic">Market Static</div>
+                <div class="market-media__title">
+                  <p>
+                    Course <br />
+                    overview
+                  </p>
+                  <p>+15%</p>
+                </div>
+                <img
+                  src="assets/img/market-plot.svg"
+                  alt=""
+                  class="market-media__plot"
+                />
+                <div class="market-media__months">
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span class="month-active">Jun</span>
+                  <span>Jul</span>
+                </div>
+              </div>
+              <div class="column-media__decor_1"></div>
+              <div class="column-media__decor_2"></div>
+              <div class="column-media__decor_3"></div>
+              <div class="column-media__decor_4"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__availability availability-page">
+          <div class="availability-page__container">
+            <div class="availability-page__header availability-header">
+              <p class="availability-header__title block-title">
+                Check Availability
+              </p>
+              <p class="availability-header__subtitle block-subtitle">
+                It is a long established fact that a reader will be distracted
+                <br />
+                by the readable content of a page.
+              </p>
+            </div>
+            <div class="availability-page__body availability-body">
+              <div class="availability-body__image-cnt">
+                <img
+                  src="assets/img/form-img.jpg"
+                  alt="hotel buildings"
+                  class="availability-body__image"
+                />
+              </div>
+              <form
+                action="#"
+                method="POST"
+                class="availability-body__form form-availability _icon-vectors"
+              >
+                <div class="form-availability__row">
+                  <label class="form-availability__label" for="checkIn"
+                    >Check-In</label
+                  >
+                  <input
+                    id="checkIn"
+                    class="form-availability__input _icon-calendar"
+                    type="date"
+                  />
+                </div>
+                <div class="form-availability__row">
+                  <label class="form-availability__label" for="checkOut"
+                    >Check-Out</label
+                  >
+                  <input
+                    id="checkOut"
+                    class="form-availability__input _icon-calendar"
+                    type="date"
+                  />
+                </div>
+                <div class="form-availability__row select-row">
+                  <label class="form-availability__label" for="rooms"
+                    >Guests:</label
+                  >
+                  <select
+                    class="form-availability__select"
+                    name="rooms"
+                    id="rooms"
+                  >
+                    <option
+                      class="form-availability__option"
+                      selected
+                      value="1"
+                    >
+                      1 Room
+                    </option>
+                    <option class="form-availability__option" value="2">
+                      2 Rooms
+                    </option>
+                    <option class="form-availability__option" value="3">
+                      3 Rooms
+                    </option>
+                    <option class="form-availability__option" value="4">
+                      4 Rooms
+                    </option>
+                  </select>
+                </div>
+                <button class="form-availability__button" type="submit">
+                  Check Availability
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="page__popular popular-rooms">
+          <div class="popular-rooms__container">
+            <div class="popular-rooms__header popular-header">
+              <p class="popular-header__title block-title">
+                Our Most Popular Room
+              </p>
+              <p class="popular-header__subtitle block-subtitle">
+                It is a long-established fact that a reader will be distracted
+                <br />
+                by the readable content of a page.
+              </p>
+            </div>
+            <div class="popular-rooms__cards">
+              <a href="" class="popular-rooms__card room-card">
+                <div class="room-card__image-cnt">
+                  <img
+                    src="assets/img/rooms/deluxe-room.jpg"
+                    alt="room"
+                    class="room-card__image"
+                  />
+                </div>
+                <div class="room-card__descr">
+                  <p class="room-card__title">Deluxe Contrast Room</p>
+                  <div class="room-card__properties">
+                    <span class="room-card__property room-card__property_area"
+                      >52 sqm</span
+                    >
+                    <span class="room-card__property room-card__property_bed"
+                      >2 bed</span
+                    >
+                    <span class="room-card__property room-card__property_bath"
+                      >1 Bathroom</span
+                    >
+                  </div>
+                  <div class="room-card__price"><span>$200</span> / Night</div>
+                </div>
+              </a>
+              <a href="" class="popular-rooms__card room-card">
+                <div class="room-card__image-cnt">
+                  <img
+                    src="assets/img/rooms/luxery-room.jpg"
+                    alt="room"
+                    class="room-card__image"
+                  />
+                </div>
+                <div class="room-card__descr">
+                  <p class="room-card__title">Luxery Twin Room</p>
+                  <div class="room-card__properties">
+                    <span class="room-card__property room-card__property_area"
+                      >52 sqm</span
+                    >
+                    <span class="room-card__property room-card__property_bed"
+                      >2 bed</span
+                    >
+                    <span class="room-card__property room-card__property_bath"
+                      >1 Bathroom</span
+                    >
+                  </div>
+                  <div class="room-card__price"><span>$250</span> / Night</div>
+                </div>
+              </a>
+              <a href="" class="popular-rooms__card room-card">
+                <div class="room-card__image-cnt">
+                  <img
+                    src="assets/img/rooms/single-room.jpg"
+                    alt="room"
+                    class="room-card__image"
+                  />
+                </div>
+                <div class="room-card__descr">
+                  <p class="room-card__title">Single Contrast Room</p>
+                  <div class="room-card__properties">
+                    <span class="room-card__property room-card__property_area"
+                      >52 sqm</span
+                    >
+                    <span class="room-card__property room-card__property_bed"
+                      >2 bed</span
+                    >
+                    <span class="room-card__property room-card__property_bath"
+                      >1 Bathroom</span
+                    >
+                  </div>
+                  <div class="room-card__price"><span>$280</span> / Night</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__services services">
+          <div class="services__container">
+            <div class="services__header services-header">
+              <p class="services-header__subtitle block-subtitle">
+                OUR SERVICES
+              </p>
+              <p class="services-header__title block-title">Hotel Facilities</p>
+            </div>
+            <div class="services__items">
+              <div class="services__item item-service">
+                <div class="item-service__top">
+                  <h6 class="item-service__category">Pick up & Drop</h6>
+                  <div class="item-service__image-cnt">
+                    <img
+                      src="assets/img/services/transfer.png"
+                      alt="transfer"
+                      class="item-service__image"
+                    />
+                  </div>
+                </div>
+                <p class="item-service__descr">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page.
+                </p>
+              </div>
+              <div class="services__item item-service">
+                <div class="item-service__top">
+                  <h6 class="item-service__category">Parking Space</h6>
+                  <div class="item-service__image-cnt">
+                    <img
+                      src="assets/img/services/parking.png"
+                      alt="parking"
+                      class="item-service__image"
+                    />
+                  </div>
+                </div>
+                <p class="item-service__descr">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="services__item item-service">
+                <div class="item-service__top">
+                  <h6 class="item-service__category">Room Services</h6>
+                  <div class="item-service__image-cnt">
+                    <img
+                      src="assets/img/services/room-service.png"
+                      alt="room service"
+                      class="item-service__image"
+                    />
+                  </div>
+                </div>
+                <p class="item-service__descr">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page.
+                </p>
+              </div>
+              <div class="services__item item-service">
+                <div class="item-service__top">
+                  <h6 class="item-service__category">Swimming Pool</h6>
+                  <div class="item-service__image-cnt">
+                    <img
+                      src="assets/img/services/pool.png"
+                      alt="swimming pool"
+                      class="item-service__image"
+                    />
+                  </div>
+                </div>
+                <p class="item-service__descr">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+              <div class="services__item item-service">
+                <div class="item-service__top">
+                  <h6 class="item-service__category">Fibre Internet</h6>
+                  <div class="item-service__image-cnt">
+                    <img
+                      src="assets/img/services/internet.png"
+                      alt="fibre internet"
+                      class="item-service__image"
+                    />
+                  </div>
+                </div>
+                <p class="item-service__descr">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page.
+                </p>
+              </div>
+              <div class="services__item item-service">
+                <div class="item-service__top">
+                  <h6 class="item-service__category">Breakfast</h6>
+                  <div class="item-service__image-cnt">
+                    <img
+                      src="assets/img/services/breakfast.png"
+                      alt="breakfast"
+                      class="item-service__image"
+                    />
+                  </div>
+                </div>
+                <p class="item-service__descr">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__offers offers">
+          <div class="offers__container">
+            <div class="offer">
+              <div class="offer__number">
+                <span data-digits-counter="500" class="number-digits">302</span
+                ><span class="number-sign">+</span>
+              </div>
+              <p class="offer__title">Room & Suits</p>
+            </div>
+            <div class="offer">
+              <div class="offer__number">
+                <span data-digits-counter="500" class="number-digits">25</span>
+              </div>
+              <p class="offer__title">Restaurant</p>
+            </div>
+            <div class="offer">
+              <div class="offer__number">
+                <span data-digits-counter="500" class="number-digits">510</span
+                ><span class="number-sign">+</span>
+              </div>
+              <p class="offer__title">Exceptional Food</p>
+            </div>
+            <div class="offer">
+              <div class="offer__number">
+                <span data-digits-counter="500" class="number-digits">65</span>
+              </div>
+              <p class="offer__title">Destination</p>
+            </div>
+          </div>
+        </div>
+        <section class="page__history">
+          <div class="history__container">
+            <div class="history__column-info column-info-history _icon-vectors">
+              <h3 class="column-info-history__title">Discover Our History</h3>
+              <p class="column-info-history__descr">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy.
+                <br /><br />
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable.
+              </p>
+              <div class="column-info-history__actions">
+                <a href="" class="column-info-history__explore button"
+                  >Explore More</a
+                >
+                <button
+                  type="button"
+                  class="column-info-history__watch-video watch-video-btn _icon-play"
+                >
+                  <span>Watch video</span>
+                </button>
+              </div>
+            </div>
+            <div class="history__column-video column-video ivideo">
+              <a
+                href="https://youtu.be/BQbGgW4ovSE"
+                target="_blank"
+                rel="author noopener norefer"
+                class="column-video__link ivideo__link"
+              >
+                <img
+                  title="This is an illustrative video from youtube, not specified for this particular project"
+                  class="column-video__media video__media"
+                  src="assets/img/preview.jpg"
+                  alt="preview"
+                />
+              </a>
+              <button
+                type="button"
+                class="column-video__button ivideo__button _icon-play"
+                aria-label="play video"
+              >
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="page__customers customers">
+          <div class="customers__container">
+            <div class="customers__header customers-header">
+              <p class="customers-header__title block-title">
+                Our Happy Customers
+              </p>
+              <p class="customers-header__subtitle block-subtitle">
+                Know about our clients, we are a woldwide corporate brand
+              </p>
+            </div>
+            <div class="customers__slider swiper">
+              <div class="customers-track swiper-wrapper">
+                <article class="customer-card swiper-slide">
+                  <div class="customer__image-cnt">
+                    <img
+                      src="assets/img/customers/customer1.jpg"
+                      alt="avatar"
+                      class="customer__image"
+                    />
+                  </div>
+                  <div class="customer__info">
+                    <p class="customer__name">Wade Warren</p>
+                    <p class="customer__company">Louis Vuitton</p>
+                  </div>
+                  <p class="customer__text">
+                    Necessary to deliver white glove, fully managed campaigns
+                    that surpass industry benchmarks.Take your career to next
+                    level.
+                  </p>
+                </article>
+                <article class="customer-card swiper-slide">
+                  <div class="customer__image-cnt">
+                    <img
+                      src="assets/img/customers/customer2.jpg"
+                      alt="avatar"
+                      class="customer__image"
+                    />
+                  </div>
+                  <div class="customer__info">
+                    <p class="customer__name">Albert Florise</p>
+                    <p class="customer__company">Nintendo</p>
+                  </div>
+                  <p class="customer__text">
+                    Necessary to deliver white glove, fully managed campaigns
+                    that surpass industry benchmarks.Take your career to next
+                    level.
+                  </p>
+                </article>
+                <article class="customer-card swiper-slide">
+                  <div class="customer__image-cnt">
+                    <img
+                      src="assets/img/customers/customer3.jpg"
+                      alt="avatar"
+                      class="customer__image"
+                    />
+                  </div>
+                  <div class="customer__info">
+                    <p class="customer__name">Jenny Wilson</p>
+                    <p class="customer__company">Bank of America</p>
+                  </div>
+                  <p class="customer__text">
+                    Necessary to deliver white glove, fully managed campaigns
+                    that surpass industry benchmarks.Take your career to next
+                    level.
+                  </p>
+                </article>
+                <article class="customer-card swiper-slide">
+                  <div class="customer__image-cnt">
+                    <img
+                      src="assets/img/customers/customer1.jpg"
+                      alt="avatar"
+                      class="customer__image"
+                    />
+                  </div>
+                  <div class="customer__info">
+                    <p class="customer__name">Wade Warren</p>
+                    <p class="customer__company">Louis Vuitton</p>
+                  </div>
+                  <p class="customer__text">
+                    Necessary to deliver white glove, fully managed campaigns
+                    that surpass industry benchmarks.Take your career to next
+                    level.
+                  </p>
+                </article>
+                <article class="customer-card swiper-slide">
+                  <div class="customer__image-cnt">
+                    <img
+                      src="assets/img/customers/customer2.jpg"
+                      alt="avatar"
+                      class="customer__image"
+                    />
+                  </div>
+                  <div class="customer__info">
+                    <p class="customer__name">Albert Florise</p>
+                    <p class="customer__company">Nintendo</p>
+                  </div>
+                  <p class="customer__text">
+                    Necessary to deliver white glove, fully managed campaigns
+                    that surpass industry benchmarks.Take your career to next
+                    level.
+                  </p>
+                </article>
+                <article class="customer-card swiper-slide">
+                  <div class="customer__image-cnt">
+                    <img
+                      src="assets/img/customers/customer3.jpg"
+                      alt="avatar"
+                      class="customer__image"
+                    />
+                  </div>
+                  <div class="customer__info">
+                    <p class="customer__name">Jenny Wilson</p>
+                    <p class="customer__company">Bank of America</p>
+                  </div>
+                  <p class="customer__text">
+                    Necessary to deliver white glove, fully managed campaigns
+                    that surpass industry benchmarks.Take your career to next
+                    level.
+                  </p>
+                </article>
+              </div>
+              <div class="customers-pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__news news">
+          <div class="news__container">
+            <div class="news__header news-header">
+              <p class="news-header__subtitle block-subtitle">HOTEL BLOG</p>
+              <p class="news-header__title block-title">Our News</p>
+            </div>
+            <div class="news__slider swiper">
+              <div class="news__track swiper-wrapper">
+                <article class="news__card card-news swiper-slide">
+                  <a href="" class="card-news__image-cnt">
+                    <img
+                      src="assets/img/news/card1.jpg"
+                      alt=""
+                      class="card-news__image"
+                    />
+                  </a>
+                  <div class="card-news__info">
+                    <div class="card-news__links">
+                      <a href="" class="card-news__travel">Travel</a>
+                      <a href="" class="card-news__comments">Comment</a>
+                    </div>
+                    <div class="card-news__title">How To Travel With Map</div>
+                    <div class="card-news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                    <a href="" class="card-news__more">Read More</a>
+                  </div>
+                </article>
+                <article class="news__card card-news swiper-slide">
+                  <a href="" class="card-news__image-cnt">
+                    <img
+                      src="assets/img/news/card2.jpg"
+                      alt=""
+                      class="card-news__image"
+                    />
+                  </a>
+                  <div class="card-news__info">
+                    <div class="card-news__links">
+                      <a href="" class="card-news__travel">Travel</a>
+                      <a href="" class="card-news__comments">Comment</a>
+                    </div>
+                    <div class="card-news__title">Single Contrast Room</div>
+                    <div class="card-news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                    <a href="" class="card-news__more">Read More</a>
+                  </div>
+                </article>
+                <article class="news__card card-news swiper-slide">
+                  <a href="" class="card-news__image-cnt">
+                    <img
+                      src="assets/img/news/card3.jpg"
+                      alt=""
+                      class="card-news__image"
+                    />
+                  </a>
+                  <div class="card-news__info">
+                    <div class="card-news__links">
+                      <a href="" class="card-news__travel">Travel</a>
+                      <a href="" class="card-news__comments">Comment</a>
+                    </div>
+                    <div class="card-news__title">Luxery Twin Room</div>
+                    <div class="card-news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                    <a href="" class="card-news__more">Read More</a>
+                  </div>
+                </article>
+                <article class="news__card card-news swiper-slide">
+                  <a href="" class="card-news__image-cnt">
+                    <img
+                      src="assets/img/news/card1.jpg"
+                      alt=""
+                      class="card-news__image"
+                    />
+                  </a>
+                  <div class="card-news__info">
+                    <div class="card-news__links">
+                      <a href="" class="card-news__travel">Travel</a>
+                      <a href="" class="card-news__comments">Comment</a>
+                    </div>
+                    <div class="card-news__title">How To Travel With Map</div>
+                    <div class="card-news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                    <a href="" class="card-news__more">Read More</a>
+                  </div>
+                </article>
+                <article class="news__card card-news swiper-slide">
+                  <a href="" class="card-news__image-cnt">
+                    <img
+                      src="assets/img/news/card2.jpg"
+                      alt=""
+                      class="card-news__image"
+                    />
+                  </a>
+                  <div class="card-news__info">
+                    <div class="card-news__links">
+                      <a href="" class="card-news__travel">Travel</a>
+                      <a href="" class="card-news__comments">Comment</a>
+                    </div>
+                    <div class="card-news__title">Single Contrast Room</div>
+                    <div class="card-news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                    <a href="" class="card-news__more">Read More</a>
+                  </div>
+                </article>
+                <article class="news__card card-news swiper-slide">
+                  <a href="" class="card-news__image-cnt">
+                    <img
+                      src="assets/img/news/card3.jpg"
+                      alt=""
+                      class="card-news__image"
+                    />
+                  </a>
+                  <div class="card-news__info">
+                    <div class="card-news__links">
+                      <a href="" class="card-news__travel">Travel</a>
+                      <a href="" class="card-news__comments">Comment</a>
+                    </div>
+                    <div class="card-news__title">Luxery Twin Room</div>
+                    <div class="card-news__text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </div>
+                    <a href="" class="card-news__more">Read More</a>
+                  </div>
+                </article>
+              </div>
+              <div class="news-pagination swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="page__signup signup-page">
+          <div class="signup-page__container">
+            <p class="signup-page__label">Stay in Touch</p>
+            <p class="signup-page__title">
+              Signup to receive news
+              <br />
+              and updates from our hotel.
+            </p>
+            <form action="" class="signup-page__email-form">
+              <input
+                value=""
+                name="email"
+                placeholder="Enter Your Email Address"
+                type="text"
+                class="signup-page__input"
+              />
+              <button class="signup-page__submit" type="submit">
+                subscribe
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__main main-footer">
+          <div class="main-footer__wrapper">
+            <div class="main-footer__container">
+              <div class="main-footer__columns">
+                <div class="main-footer__column column-brand">
+                  <a href="" class="logo column-title">
+                    <img
+                      src="assets/icons/logo.svg"
+                      alt="logotype"
+                      class="logo-img"
+                    />
+                    <span class="brand-footer">HOTEL</span>
+                  </a>
+                  <p class="footer-column__text">
+                    Itawa is a responsive real estate landing page template.
+                    Itawa is a landing page template.Itawa template.
+                  </p>
+                </div>
+                <div class="main-footer__column column-contacts">
+                  <div class="column-contacts__title column-title">
+                    Contact Us
+                  </div>
+                  <ul class="column-contacts__list">
+                    <li class="column-contacts__item _icon-location">
+                      <span>123 Business Centre London SW1A 1AA</span>
+                    </li>
+                    <li class="column-contacts__item _icon-phone">
+                      <a href="tel:+1000000000">+1 0000 000 00</a>
+                    </li>
+                    <li class="column-contacts__item _icon-mail">
+                      <a href="mailto:info@businessname.com"
+                        >info@businessname.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-footer__column column-socials">
+                  <div class="column-socials__title column-title">
+                    Follow Us
+                  </div>
+                  <ul class="column-socials__icons">
+                    <li class="column-socials__icon">
+                      <a
+                        href=""
+                        class="column-socials__link _icon-facebook"
+                      ></a>
+                    </li>
+                    <li class="column-socials__icon">
+                      <a
+                        href=""
+                        class="column-socials__link _icon-instagram"
+                      ></a>
+                    </li>
+                    <li class="column-socials__icon">
+                      <a href="" class="column-socials__link _icon-twitter"></a>
+                    </li>
+                  </ul>
+                  <div class="column-socials__text">
+                    Itawa is a responsive real estate landing page template.
+                    Itawa is a landing page template.Itawa template.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+          <div class="bottom-footer__container">
+            <p class="bottom-footer__label">©HOTEL Official 2022</p>
+            <p class="bottom-footer__links">
+              <a href="" class="bottom-footer__link">Privacy policy</a>
+              <a href="" class="bottom-footer__link">Cookies</a>
+              <a href="" class="bottom-footer__link">Terms of Use</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div class="popup">
+        <div class="popup__body">
+          <span class="popup-close">X</span>
+          <div class="popup__message"></div>
+        </div>
+      </div>
+      <div class="loader"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="js/scripts.js" defer></script>
+  </body>
+</html>

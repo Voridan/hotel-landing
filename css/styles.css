@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Merriweather:wght@300&family=Open+Sans:wght@300;400;600;700&family=Work+Sans:wght@400;500&display=swap');
+@import "./base.css";
+@import "./iconsfont.css";
+@import "./common.css";
+@import "./blocks/header.css";
+@import "./blocks/heropage.css";
+@import "./blocks/availability.css";
+@import "./blocks/popular.css";
+@import "./blocks/services.css";
+@import "./blocks/offers.css";
+@import "./blocks/history.css";
+@import "./blocks/customers.css";
+@import "./blocks/news.css";
+@import "./blocks/subscribe.css";
+@import "./blocks/footer.css";

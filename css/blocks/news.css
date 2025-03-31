@@ -1,0 +1,164 @@
+.news {
+  padding-top: 120px;
+}
+
+.news-header {
+  margin-bottom: 40px;
+}
+
+.news-header__subtitle {
+  color: #597193;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.26em;
+  margin-bottom: 1.18em;
+}
+
+.news__slider {
+  padding-bottom: 70px;
+}
+
+.card-news__image-cnt {
+  display: block;
+  position: relative;
+  padding-bottom: 90%;
+}
+
+.card-news__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-news__info {
+  padding: 20px 26px;
+  border: 1px solid #596B86;
+}
+
+.card-news__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 8px;
+  margin-bottom: 8px;
+}
+
+.card-news__travel,
+.card-news__comments {
+  color: #797979;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  transition: all 0.3s ease 0s;
+}
+
+.card-news__travel::before {
+  content: "\e90c";
+  font-family: 'icons';
+  color: #DA8907;
+  font-size: 18px;
+  transition: color 0.3s ease 0s;
+}
+
+.card-news__comments::before {
+  content: "\e904";
+  font-family: 'icons';
+  color: #DA8907;
+  font-size: 18px;
+  transition: color 0.3s ease 0s;
+}
+
+.card-news__title {
+  color: #131313;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.card-news__title:not(:last-child) {
+  margin-bottom: 0.4em;
+}
+
+.card-news__text {
+  color: #9B9B9B;
+  font-family: var(--AvgSans);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.card-news__text:not(:last-child) {
+  margin-bottom: 1.3em;
+}
+
+.card-news__more {
+  color: var(--deepblue);
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  column-gap: 9px;
+}
+
+.card-news__more::before {
+  padding-top: 2px;
+  font-family: 'icons';
+  content: "\e90e";
+  color: var(--deepblue);
+  transition: transform 0.3s ease 0s;
+}
+
+@media (any-hover: hover){
+  .card-news__travel:hover,
+  .card-news__comments:hover,
+  .card-news__travel:hover.card-news__travel::before,
+  .card-news__comments:hover.card-news__comments::before {
+    color: var(--deepblue);
+  }
+
+  .card-news__more:hover.card-news__more::before {
+    transform: translate(10px,0%);
+  }
+}
+
+@media (max-width: 61.9988em){
+  .news {
+    padding-top: 90px;
+  }
+
+  .news__slider {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 47.9988em){
+  .news {
+    padding-top: 50px;
+  }
+
+  .card-news__info {
+    padding: 15px;
+  }
+
+  .card-news__title {
+    font-size: 20px;
+  }
+
+  .news-header {
+    margin-bottom: 20px;
+  }
+  
+  .news-header__subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 0.7em;
+  }
+}

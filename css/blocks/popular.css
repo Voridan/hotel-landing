@@ -1,0 +1,130 @@
+.popular-rooms {
+  padding-top: 120px;
+}
+
+.popular-rooms__header {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.popular-rooms__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.popular-rooms__card {
+  display: flex;
+  flex-flow: column;
+  transition: all 0.5s ease 0s;
+}
+
+@media (any-hover: hover){
+  .popular-rooms__card:hover{
+    box-shadow: 0px 0px 20px -10px #596B86;
+  }
+}
+
+.room-card__image-cnt {
+  position: relative;
+  padding-bottom: 67.5%;
+  border-radius: 6px 6px 0px 0px;
+  overflow: hidden;
+}
+
+.room-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-card__descr {
+  padding: 24px;
+  border: 1px solid #596B86;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.room-card__title {
+  color: #131313;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.room-card__properties {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.room-card__property {
+  color: #727272;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em; 
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.room-card__property_area::before {
+  content: "";
+  display: block;
+  background-image: url("/assets/icons/area.svg");
+  width: 12px;
+  height: 12px;
+}
+
+.room-card__property_bed::before {
+  content: "";
+  display: block;
+  background-image: url("/assets/icons/bed.svg");
+  width: 18px;
+  height: 11px;
+}
+
+.room-card__property_bath::before {
+  content: "";
+  display: block;
+  background-image: url("/assets/icons/bath.svg");
+  width: 17px;
+  height: 11px;
+}
+
+.room-card__price {
+  color: #585858;
+  font-weight: 600;
+}
+
+.room-card__price span {
+  color: #384D6C;
+  font-size: 30px;
+}
+
+@media (max-width: 61.9988em){
+  .popular-rooms {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 47.9988em){
+  .popular-rooms {
+    padding-top: 50px;
+  }
+  
+  .popular-rooms__header {
+    margin-bottom: 25px;
+  }
+
+  .room-card__title {
+    font-size: 20px;
+  }
+
+  .room-card__price span {
+    font-size: 20px;
+  }
+}
